@@ -4,14 +4,16 @@ using EFCoreProject;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFCoreProject.Migrations
 {
     [DbContext(typeof(FrameworkContext))]
-    partial class FrameworkContextModelSnapshot : ModelSnapshot
+    [Migration("20200923045309_CreateCourseTable")]
+    partial class CreateCourseTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
